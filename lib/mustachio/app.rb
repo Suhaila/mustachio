@@ -44,6 +44,9 @@ module Mustachio
     get '/face_api_dev_challenge' do
       haml :face_api_dev_challenge
     end
-    
+
+    get '/ping' do
+      "pong!"
+    end
   end
 end

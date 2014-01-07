@@ -47,3 +47,13 @@ Rake::RDocTask.new do |rdoc|
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
+
+namespace :scheduler do
+  desc "Ping the application to keep Heroku from idling"
+  task :ping do
+    uri = URI.parse("http://#{ENV['HOST']}/ping")
+    http = Net::HTTP.new(uri.host, uri.port)
+    request = Net::HTTP::Get.new(uri.request_uri)
+    response = http.request(request)
+  end
+end
