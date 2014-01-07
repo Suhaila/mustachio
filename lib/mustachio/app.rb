@@ -3,8 +3,8 @@ require 'sinatra/base'
 
 module Mustachio
   class App < Sinatra::Base
-    DEMO_IMAGE = 'http://www.librarising.com/astrology/celebs/images2/QR/queenelizabethii.jpg'
-    
+    DEMO_IMAGE = 'http://quickleft-production.s3.amazonaws.com/uploads/user/team_page_sprite/2/Ingrid_Large.png'
+
     set :static, true
     
     configure :production do
