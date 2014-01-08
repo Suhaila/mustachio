@@ -29,6 +29,9 @@ group :development, :test do
   gem 'rspec'
   
   gem 'debugger'
+  gem 'pry'
+  gem 'pry-debugger'
+  gem 'shotgun'
 end
 
 group :test do
