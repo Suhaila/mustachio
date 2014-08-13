@@ -3,14 +3,14 @@ require 'sinatra/base'
 
 module Mustachio
   class App < Sinatra::Base
-    DEMO_IMAGE = 'http://www.librarising.com/astrology/celebs/images2/QR/queenelizabethii.jpg'
-    
+    DEMO_IMAGE = 'http://quickleft-production.s3.amazonaws.com/uploads/user/team_page_sprite/2/Ingrid_Large.png'
+
     set :static, true
-    
+
     configure :production do
       require 'newrelic_rpm' if ENV['NEW_RELIC_ID']
     end
-    
+
     before do
       app_host = ENV['MUSTACHIO_APP_DOMAIN']
       if app_host && request.host != app_host
@@ -18,13 +18,11 @@ module Mustachio
         redirect request.url.sub(request_host_with_port, app_host), 301
       end
     end
-    
-    
+
     get %r{^/(\d+|rand)?$} do |stache_num|
       src = params[:src]
       if src
-        # use the specified stache, otherwise fall back to random
-        image = Magickly.process_src params[:src], :mustachify => (stache_num || true)
+        image = Magickly.process_src params[:src], :mustachify => (stache_num || 'rand')
         image.to_response(env)
       else
         @stache_num = stache_num
@@ -32,18 +30,9 @@ module Mustachio
         haml :index
       end
     end
-    
-    get '/gallery' do
-      haml :gallery
+
+    get '/ping' do
+      "pong!"
     end
-    
-    get '/test' do
-      haml :test
-    end
-    
-    get '/face_api_dev_challenge' do
-      haml :face_api_dev_challenge
-    end
-    
   end
 end

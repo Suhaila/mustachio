@@ -12,7 +12,6 @@
   filename: mustache_07.png
   vert_offset: 30
   mouth_overlap: 50
-
 -
   filename: grand-handlebar.png
   vert_offset: 30
@@ -25,3 +24,16 @@
   filename: petite-handlebar.png
   vert_offset: 0
   mouth_overlap: 60
+-
+  filename: mustache_11.png
+  vert_offset: 40
+  mouth_overlap: 70
+-
+  filename: mustache_12.png
+  vert_offset: 45
+  mouth_overlap: 45
+-
+  filename: mustache_13.png
+  vert_offset: 10
+  mouth_overlap: 0
+
