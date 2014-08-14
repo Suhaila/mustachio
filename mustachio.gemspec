@@ -38,6 +38,7 @@ Gem::Specification.new do |s|
     "lib/mustachio/public/images/staches/grand-handlebar.png",
     "lib/mustachio/public/images/staches/mustache_03.png",
     "lib/mustachio/public/images/staches/mustache_03.svg",
+    "lib/mustachio/public/images/staches/mustache_04_blue.png",
     "lib/mustachio/public/images/staches/mustache_07.png",
     "lib/mustachio/public/images/staches/painters-brush.png",
     "lib/mustachio/public/images/staches/petite-handlebar.png",
