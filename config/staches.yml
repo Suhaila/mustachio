@@ -56,5 +56,8 @@
   filename: mustache_11_purple.png
   vert_offset: 40
   mouth_overlap: 70
+-
+  filename: mustache_03.svg
+  vert_offset: 15
 
 
