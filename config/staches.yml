@@ -36,4 +36,9 @@
   filename: mustache_13.png
   vert_offset: 10
   mouth_overlap: 0
+-
+  filename: mustache_04.png
+  vert_offset: 30
+  mouth_overlap: 50
+
 
