@@ -9,9 +9,17 @@
   vert_offset: 40
   mouth_overlap: 100
 -
+  filename: mustache_04.png
+  vert_offset: 30
+  mouth_overlap: 50
+-
   filename: mustache_07.png
   vert_offset: 30
   mouth_overlap: 50
+-
+  filename: mustache_13_red.png
+  vert_offset: 10
+  mouth_overlap: 0
 -
   filename: grand-handlebar.png
   vert_offset: 30
