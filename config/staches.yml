@@ -17,11 +17,19 @@
   vert_offset: 30
   mouth_overlap: 50
 -
+  filename: mustache_04_blue.png
+  vert_offset: 30
+  mouth_overlap: 50
+-
   filename: grand-handlebar.png
   vert_offset: 30
   mouth_overlap: 150
 -
   filename: painters-brush.png
+  vert_offset: 20
+  mouth_overlap: 125
+-
+filename: mustache_02_blue.png
   vert_offset: 20
   mouth_overlap: 125
 -
@@ -38,6 +46,10 @@
   mouth_overlap: 45
 -
   filename: mustache_13.png
+  vert_offset: 10
+  mouth_overlap: 0
+-
+  filename: mustache_13_red.png
   vert_offset: 10
   mouth_overlap: 0
 
